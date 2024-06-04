@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,7 +17,7 @@ namespace CLASE8_BANCO_LIST
             ListaCuentas = new List<Cuenta>();
         }
 
-        //COMMIT REALIZADO
+
 
         public bool AgregarCuenta(ulong CBU, string Cliente, float Saldo)
         {
@@ -31,43 +32,25 @@ namespace CLASE8_BANCO_LIST
             }
         }
 
-        public bool Depositar(ulong CBU, float Monto)
+        public void Depositar(ulong CBU, float Monto)
         {
-            if (ExisteCBU(CBU) != null)
-            {
-                ExisteCBU(CBU).Depositar(Monto);
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+             ExisteCBU(CBU).Depositar(Monto);
         }
 
         public bool Extraer(ulong CBU, float Monto)
         {
-            if (ExisteCBU(CBU) != null)
-            {
-                return ExisteCBU(CBU).Extraer(Monto); 
-            }
-
-            return false;
+                return ExisteCBU(CBU).Extraer(Monto);
         }
 
         public string MostrarCuenta(ulong CBU)
         {
-            if (ExisteCBU(CBU) != null)
-            {
-                return ExisteCBU(CBU).DarDatos();
-            }
-            else
-            {
-                return "\nEl CBU no existe.\n";
-            }
+            return ExisteCBU(CBU).DarDatos();
         }
 
         public string MostrarLista()
         {
+            ListaCuentas.Sort();
+
             string Datos = "";
             int i;
 
@@ -76,14 +59,7 @@ namespace CLASE8_BANCO_LIST
                 Datos = Datos + $"\nCUENTA NRO {i+1}:\n" + ListaCuentas[i].DarDatos() + "\n";
             }
 
-            if (Datos != "")
-            {
-                return Datos;
-            }
-            else
-            {
-                return "\nNo hay cuentas para mostrar.\n";
-            }
+            return Datos;
 
         }
 
@@ -112,17 +88,19 @@ namespace CLASE8_BANCO_LIST
 
         public Cuenta ExisteCBU(ulong CBU)
         {
-            int i;
+            int Indice = ListaCuentas.IndexOf(new Cuenta(CBU));
 
-            for (i = 0; i < ListaCuentas.Count(); i++)
+            if (Indice == -1)
             {
-                if (ListaCuentas[i].ManageCBU == CBU)
-                {
-                    return ListaCuentas[i];
-                }
+                return null;
             }
 
-            return null;
+            return ListaCuentas[Indice];
+        }
+
+        public float CalcularInteres(ulong CBU, int Meses)
+        {
+            return ExisteCBU(CBU).CalcularInteres(Meses);
         }
 
     }

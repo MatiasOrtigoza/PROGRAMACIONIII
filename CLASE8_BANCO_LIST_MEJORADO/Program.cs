@@ -1,129 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CLASE8_BANCO_LIST
 {
     internal class Program
     {
-        
+        static Interfaz UI = new Interfaz(ConsoleColor.DarkBlue, ConsoleColor.White);
+        static ControladorCuentas Control = new ControladorCuentas();
+        static ulong CBU;
 
         static void Main(string[] args)
         {
-            int Opcion;
-            float Saldo;
-            float Monto;
-            ulong CBU;
-            string Cliente;
-            bool Operacion;
-            Interfaz UI = new Interfaz(ConsoleColor.DarkBlue, ConsoleColor.White);
-            ControladorCuentas Control = new ControladorCuentas();
+            int Opcion; 
+
+            UI.Mensaje("\nIngres el porcentaje de interés mensual: ");
+            Cuenta.ManageInteresMensual = UI.SolicitarPorcentaje();
 
             Opcion = UI.MostrarMenu();
 
-            while (Opcion != 7)
+            while (Opcion != 8)
             {
                 UI.Clear();
                 if (Opcion == 1)
                 {
-                    UI.Mensaje("\nIngrese el CBU a crear: ");
-                    CBU = UI.SolicitarCBU();
-                    UI.Mensaje("\nIngrese el saldo inicial: ");
-                    Saldo = UI.SolicitarSaldo();
-                    UI.Mensaje("\nIngrese el nombre del cliente: ");
-                    Cliente = UI.SolicitarNombre();
-                    Operacion = Control.AgregarCuenta(CBU, Cliente, Saldo);
-                    if (Operacion)
-                    {
-                        UI.Mensaje("\n¡Cuenta agregada satisfactoriamente!\n");
-                    }
-                    else
-                    {
-                        UI.Mensaje("\nLa cuenta ya existe...\n");
-                    }
+                    AgregarCuenta();
                 }
-                else if (Opcion == 2) {
-                    if (!Control.ListaVacia())
-                    {
-                        UI.Mensaje("\nIngrese el CBU al que quiere depositar: ");
-                        CBU = UI.SolicitarCBU();
-                        if (Control.ExisteCBU(CBU) == null)
-                        {
-                            UI.Mensaje("\nNo existe el CBU al que quiere depositar");
-
-                        }
-                        else
-                        {
-                            UI.Mensaje("\nIngrese el monto a depositar: ");
-                            Monto = UI.SolicitarSaldo();
-                            Operacion = Control.Depositar(CBU, Monto);
-                            UI.Mensaje("\n¡Depósito realizado con éxito!\n");
-                        }
-                    }
-                    else
-                    {
-                        UI.Mensaje("\nNo hay cuentas cargadas.");
-                    }
-                    
-
+                else if (Opcion == 2) 
+                {
+                    Deposito();
                 }
                 else if (Opcion == 3)
                 {
-                    if (!Control.ListaVacia())
-                    {
-                        UI.Mensaje("\nIngrese el CBU del que quiere extraer: ");
-                        CBU = UI.SolicitarCBU();
-                        UI.Mensaje("\nIngrese el monto a extraer: ");
-                        Monto = UI.SolicitarSaldo();
-                        Operacion = Control.Extraer(CBU, Monto);
-                        if (Operacion)
-                        {
-                            UI.Mensaje("\n¡La extracción fue realizada con éxito!\n");
-                        }
-                        else
-                        {
-                            UI.Mensaje("\nEl monto es insuficiente o la cuenta no existe...\n");
-
-                        }
-                    }
-                    else
-                    {
-                        UI.Mensaje("\nNo hay cuentas cargadas.");
-                    }
-                    
+                    Extraccion();
                 }
                 else if (Opcion == 4)
                 {
-                    UI.Mensaje("\nIngrese el CBU para ver sus datos: ");
-                    CBU = UI.SolicitarCBU();
-                    UI.Mensaje(Control.MostrarCuenta(CBU));
+                    MostrarDatos();
                 }
                 else if (Opcion == 5)
                 {
-                    UI.Mensaje(Control.MostrarLista());
+                    MostrarLista();
                 }
                 else if (Opcion == 6)
                 {
-                    if (!Control.ListaVacia())
-                    {
-                        UI.Mensaje("\nIngrese el CBU a remover: ");
-                        CBU = UI.SolicitarCBU();
-                        Operacion = Control.EliminarCuenta(CBU);
-                        if (Operacion)
-                        {
-                            UI.Mensaje("\n¡Cuenta eliminada con éxito!\n");
-                        }
-                        else
-                        {
-                            UI.Mensaje("\nLa cuenta no existe.\n");
-                        }
-                    }
-                    else
-                    {
-                        UI.Mensaje("\nNo hay cuentas cargadas.");
-                    }
+                    RemoverCuenta();
+                }
+                else if (Opcion == 7)
+                {
+                    EstimarInteres();
                 }
                 UI.PressKeyToContinue();
                 Opcion = UI.MostrarMenu();
@@ -132,5 +61,157 @@ namespace CLASE8_BANCO_LIST
             UI.Mensaje("\nSaliendo del programa.\nPresione una tecla para continuar...");
             Console.ReadKey();
         }
+
+        static void AgregarCuenta()
+        {
+            float Saldo;
+            string Cliente;
+
+            UI.Mensaje("\nIngrese el CBU a crear: ");
+            CBU = UI.SolicitarCBU();
+            UI.Mensaje("\nIngrese el saldo inicial: ");
+            Saldo = UI.SolicitarSaldo();
+            UI.Mensaje("\nIngrese el nombre del cliente: ");
+            Cliente = UI.SolicitarNombre();
+            
+            if (!Control.AgregarCuenta(CBU, Cliente, Saldo))
+            {
+                UI.Mensaje("\nLa cuenta ya existe...\n");
+                return;
+            }
+            UI.Mensaje("\n¡Cuenta agregada satisfactoriamente!\n");
+        }
+
+        static void Deposito()
+        {
+            float Monto;
+
+            if (Control.ListaVacia())
+            {
+                UI.Mensaje("\nNo hay cuentas cargadas.");
+                return;
+            }
+
+            UI.Mensaje("\nIngrese el CBU al que quiere depositar: ");
+            CBU = UI.SolicitarCBU();
+            if (Control.ExisteCBU(CBU) == null)
+            {
+                UI.Mensaje("\nNo existe el CBU al que quiere depositar");
+                return;
+            }
+
+            UI.Mensaje("\nIngrese el monto a depositar: ");
+            Monto = UI.SolicitarSaldo();
+            Control.Depositar(CBU, Monto);
+            UI.Mensaje("\n¡Depósito realizado con éxito!\n");
+        }
+
+        static void Extraccion()
+        {
+            float Monto;
+
+            if (Control.ListaVacia())
+            {
+                UI.Mensaje("\nNo hay cuentas cargadas.");
+                return;
+            }
+
+            UI.Mensaje("\nIngrese el CBU del que quiere extraer: ");
+            CBU = UI.SolicitarCBU();
+
+            if (Control.ExisteCBU(CBU) == null)
+            {
+                UI.Mensaje("\nEl CBU no existe...\n");
+                return;
+            }
+
+            UI.Mensaje("\nIngrese el monto a extraer: ");
+            Monto = UI.SolicitarSaldo();
+
+            if (!Control.Extraer(CBU, Monto))
+            {
+                UI.Mensaje("\nEl monto es mayor al saldo disponible...");
+                return;
+            }
+
+            UI.Mensaje("\n!La extracción fue realizada con éxito!");
+        }
+
+        static void MostrarDatos()
+        {
+
+            if (Control.ListaVacia())
+            {
+                UI.Mensaje("\nNo hay cuentas cargadas.");
+                return;
+            }
+
+            UI.Mensaje("\nIngrese el CBU para ver sus datos: ");
+            CBU = UI.SolicitarCBU();
+            if (Control.ExisteCBU(CBU) == null)
+            {
+                UI.Mensaje("\nNo existe el CBU ingresado...");
+                return;
+            }
+
+            UI.Mensaje(Control.MostrarCuenta(CBU));
+        }
+
+        static void MostrarLista()
+        {
+            if (Control.MostrarLista() == "")
+            {
+                UI.Mensaje("\nLa lista está vacía");
+                return;
+            }
+
+            UI.Mensaje(Control.MostrarLista());
+        }
+
+        static void RemoverCuenta()
+        {
+            if (Control.ListaVacia())
+            {
+                UI.Mensaje("\nNo hay cuentas cargadas.");
+                return;
+            }
+
+            UI.Mensaje("\nIngrese el CBU a remover: ");
+            CBU = UI.SolicitarCBU();
+
+            if (!Control.EliminarCuenta(CBU))
+            {
+                UI.Mensaje("\nLa cuenta no existe.\n");
+                return;
+            }
+
+            UI.Mensaje("\n¡Cuenta eliminada con éxito!\n");
+
+        }
+
+        static void EstimarInteres()
+        {
+
+            if (Control.ListaVacia())
+            {
+                UI.Mensaje("\nLa lista está vacía");
+                return;
+            }
+
+            UI.Mensaje("\nIngrese el CBU para calcular el interés: ");
+            CBU = UI.SolicitarCBU();
+
+            if (Control.ExisteCBU(CBU) == null)
+            {
+                UI.Mensaje("\nLa cuenta no existe.\n");
+                return;
+            }
+
+            UI.Mensaje("\nIngrese la cantidad de meses que desea mantener el dinero en el banco: ");
+            int Meses = UI.SolicitarMeses();
+
+            UI.Mensaje($"\nSi usted mantiene el saldo durante {Meses} meses, su saldo final será de: {Control.CalcularInteres(CBU, Meses)}");
+        }
+
     }
 }

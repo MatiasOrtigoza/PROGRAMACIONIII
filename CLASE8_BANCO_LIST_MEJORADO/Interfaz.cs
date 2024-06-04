@@ -27,9 +27,25 @@ namespace CLASE8_BANCO_LIST
             Console.WriteLine("\n[4] -> Mostrar datos de una cuenta.");
             Console.WriteLine("\n[5] -> Listar los datos de todas las cuentas.");
             Console.WriteLine("\n[6] -> Remover una cuenta.");
-            Console.WriteLine("\n[7] -> Salir de la aplicación.");
+            Console.WriteLine("\n[7] -> Simular saldo final después de X meses.");
+            Console.WriteLine("\n[8] -> Salir de la aplicación.");
             Console.WriteLine("\n ----------------------------------------------");
             return SolicitarOpcion();
+        }
+
+        public int SolicitarMeses()
+        {
+            int Meses;
+            bool Resultado;
+
+            Resultado = int.TryParse(Console.ReadLine(), out Meses);
+            while (!Resultado || Meses < 0)
+            {
+                Console.Write("\nValor incorrecto.\nIngrese nuevamente: ");
+                Resultado = int.TryParse(Console.ReadLine(), out Meses);
+            }
+
+            return Meses;
         }
 
         public int SolicitarOpcion()
@@ -38,7 +54,7 @@ namespace CLASE8_BANCO_LIST
             bool Resultado;
             Console.Write("\nIngrese su opción: ");
             Resultado = int.TryParse(Console.ReadLine(), out Opcion);
-            while (!Resultado || Opcion < 1 || Opcion > 7)
+            while (!Resultado || Opcion < 1 || Opcion > 8)
             {
                 Console.Write("\nOpción inválida.\nIngrese nuevamente: ");
                 Resultado = int.TryParse(Console.ReadLine(), out Opcion);
@@ -76,6 +92,21 @@ namespace CLASE8_BANCO_LIST
 
             }
             return Saldo;
+        }
+
+        public float SolicitarPorcentaje()
+        {
+            float Porcentaje;
+            bool Resultado;
+
+            Resultado = float.TryParse(Console.ReadLine(), out Porcentaje);
+            while (!Resultado || Porcentaje < 0)
+            {
+                Mensaje("\nPorcentaje inválido.\nIngrese nuevamente: ");
+                Resultado = float.TryParse(Console.ReadLine(), out Porcentaje);
+            }
+
+            return Porcentaje;
         }
 
         public string SolicitarNombre()
