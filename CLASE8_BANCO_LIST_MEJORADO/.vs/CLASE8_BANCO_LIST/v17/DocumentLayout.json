@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CALSE8_BANCO_LIST_MEJORADO\\",
+  "WorkspaceRootPath": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|c:\\users\\xxwan\\documents\\facultad\\tercer cuatrimestre\\programacion iii\\repositorio-ejercicios\\programacioniii\\calse8_banco_list_mejorado\\controladorcuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|c:\\users\\xxwan\\documents\\facultad\\tercer cuatrimestre\\programacion iii\\repositorio-ejercicios\\programacioniii\\clase8_banco_list_mejorado\\controladorcuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|solutionrelative:controladorcuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|c:\\users\\xxwan\\documents\\facultad\\tercer cuatrimestre\\programacion iii\\repositorio-ejercicios\\programacioniii\\calse8_banco_list_mejorado\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|solutionrelative:cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|c:\\users\\xxwan\\documents\\facultad\\tercer cuatrimestre\\programacion iii\\repositorio-ejercicios\\programacioniii\\calse8_banco_list_mejorado\\interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|solutionrelative:interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|c:\\users\\xxwan\\documents\\facultad\\tercer cuatrimestre\\programacion iii\\repositorio-ejercicios\\programacioniii\\calse8_banco_list_mejorado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EAB36BD-9130-4B03-BE6B-455F1C2DB7AF}|CLASE8_BANCO_LIST.csproj|solutionrelative:cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,26 +34,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ControladorCuentas.cs",
-              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CALSE8_BANCO_LIST_MEJORADO\\ControladorCuentas.cs",
-              "RelativeDocumentMoniker": "ControladorCuentas.cs",
-              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CALSE8_BANCO_LIST_MEJORADO\\ControladorCuentas.cs",
-              "RelativeToolTip": "ControladorCuentas.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T21:18:35.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Cuenta.cs",
-              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CALSE8_BANCO_LIST_MEJORADO\\Cuenta.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\Cuenta.cs",
               "RelativeDocumentMoniker": "Cuenta.cs",
-              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CALSE8_BANCO_LIST_MEJORADO\\Cuenta.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\Cuenta.cs",
               "RelativeToolTip": "Cuenta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAwwF8AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T21:18:35.113Z",
               "EditorCaption": ""
@@ -62,24 +49,37 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Interfaz.cs",
-              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CALSE8_BANCO_LIST_MEJORADO\\Interfaz.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\Interfaz.cs",
               "RelativeDocumentMoniker": "Interfaz.cs",
-              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CALSE8_BANCO_LIST_MEJORADO\\Interfaz.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\Interfaz.cs",
               "RelativeToolTip": "Interfaz.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowC8AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T21:18:34.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "ControladorCuentas.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\ControladorCuentas.cs",
+              "RelativeDocumentMoniker": "ControladorCuentas.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\ControladorCuentas.cs",
+              "RelativeToolTip": "ControladorCuentas.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAawDMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T21:18:35.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CALSE8_BANCO_LIST_MEJORADO\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CALSE8_BANCO_LIST_MEJORADO\\Program.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE8_BANCO_LIST_MEJORADO\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAiwKkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T21:18:33.64Z",
               "EditorCaption": ""
