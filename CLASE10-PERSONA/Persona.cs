@@ -18,10 +18,22 @@ namespace CLASE10_PERSONA
         public string Apellido { get => apellido; set => apellido = value; }
         public string Email { get => email; set => email = value; }
 
+        protected Persona(uint Legajo, string Nombre, string Apellido, string Email)
+        {
+            this.Legajo = Legajo;
+            this.Nombre = Nombre;
+            this.Apellido = Apellido;
+            this.Email = Email;
+        }
+
+        protected Persona(uint Legajo)
+        {
+            this.Legajo = Legajo;
+        }
 
         public virtual string MostrarDatos()
         {
-            return $"\nLegajo: {Legajo}\nNombre: {Nombre}\nApellido: {Apellido}\nEmail {Email}";
+            return $"\nLegajo: {Legajo}\nNombre: {Nombre}\nApellido: {Apellido}\nEmail: {Email}";
         }
         public bool Equals(Persona other)
         {

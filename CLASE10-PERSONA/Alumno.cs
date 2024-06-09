@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CLASE10_PERSONA
 {
-    sealed class Alumno:Persona, IComparable
+    sealed class Alumno:Persona, IComparable, IEquatable<Alumno>
     {
         static uint cuota;
         ushort cantMateriasAprobadas;
@@ -16,10 +16,20 @@ namespace CLASE10_PERSONA
         public ushort CantMateriasAprobadas { get => cantMateriasAprobadas; set => cantMateriasAprobadas = value; }
         public float Beca { get => beca; set => beca = value; }
 
+        public Alumno(uint Legajo, string Nombre, string Apellido, string Email, float Beca, ushort CantMateriasAprobadas):base(Legajo, Nombre, Apellido, Email)
+        {
+            this.Beca = Beca;
+            this.CantMateriasAprobadas = CantMateriasAprobadas;
+        }
+
+        public Alumno(uint Legajo):base(Legajo)
+        {
+        }
+
         public override string MostrarDatos()
         {
             return base.MostrarDatos() + $"\nCantidad de materias aprobadas: {CantMateriasAprobadas}\nCuota base: ${Cuota}\nBeca: {Beca}" +
-                $"\n Cuota final: ${CalcularCuota()}";
+                $"\nCuota final: ${CalcularCuota()}";
         }
 
         public float CalcularCuota()
@@ -46,6 +56,11 @@ namespace CLASE10_PERSONA
             }
 
             return 0;
+        }
+
+        public bool Equals(Alumno other)
+        {
+            return this.Legajo == other.Legajo;
         }
     }
 }

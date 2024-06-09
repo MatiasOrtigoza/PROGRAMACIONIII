@@ -15,6 +15,16 @@ namespace CLASE10_PERSONA
         /// <param name="Campo"></param>
         /// <returns>Devuelve el número verificando errores</returns>
 
+        public static void CargarSalarioBasico(float SalarioBasico)
+        {
+            Profesor.SalarioBasico = SalarioBasico;
+        }
+
+        public static void CargarCuota(uint Cuota)
+        {
+            Alumno.Cuota = Cuota;
+        }
+
         public static ushort SolicitarUShort(string Campo)
         {
             ushort Dato;
@@ -30,6 +40,8 @@ namespace CLASE10_PERSONA
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
                 Resultado = ushort.TryParse(Console.ReadLine(), out Dato);
             }
+
+            Clear();
 
             return Dato;
         }
@@ -56,6 +68,8 @@ namespace CLASE10_PERSONA
                 Resultado = float.TryParse(Console.ReadLine(), out Dato);
             }
 
+            Clear();
+
             return Dato;
         }
 
@@ -68,7 +82,7 @@ namespace CLASE10_PERSONA
         public static string SolicitarString(string Campo)
         {
             Clear();
-            Mensaje($"\nPor favor ingrese {Campo}: ");
+            Mensaje($"Por favor ingrese {Campo}: ");
             string Dato = Console.ReadLine();
             while (Dato == "")
             {
@@ -77,6 +91,8 @@ namespace CLASE10_PERSONA
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
             }
+
+            Clear();
 
             return Dato;
         }
@@ -102,6 +118,8 @@ namespace CLASE10_PERSONA
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
                 Resultado = uint.TryParse(Console.ReadLine(), out Dato);
             }
+
+            Clear();
 
             return Dato;
         }

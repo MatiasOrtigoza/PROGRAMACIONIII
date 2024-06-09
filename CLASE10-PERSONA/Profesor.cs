@@ -6,13 +6,23 @@ using System.Threading.Tasks;
 
 namespace CLASE10_PERSONA
 {
-    sealed class Profesor:Persona, IComparable
+    sealed class Profesor:Persona, IComparable, IEquatable<Profesor>
     {
         static float salarioBasico;
         ushort antiguedad;
 
         public static float SalarioBasico { get => salarioBasico; set => salarioBasico = value; }
         public ushort Antiguedad { get => antiguedad; set => antiguedad = value; }
+
+        public Profesor(uint Legajo, string Nombre, string Apellido, string Email, ushort Antiguedad):base(Legajo, Nombre, Apellido, Email)
+        {
+            this.Antiguedad = Antiguedad;
+        }
+
+        public Profesor(uint Legajo):base(Legajo)
+        {
+            
+        }
 
         public override string MostrarDatos()
         {
@@ -42,6 +52,11 @@ namespace CLASE10_PERSONA
             }
 
             return 0;
+        }
+
+        public bool Equals (Profesor other)
+        {
+            return this.Legajo == other.Legajo;
         }
     }
 }
