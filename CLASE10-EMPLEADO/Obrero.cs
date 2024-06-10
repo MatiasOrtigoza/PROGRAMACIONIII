@@ -16,5 +16,10 @@ namespace CLASE10_EMPLEADO
         {
             this.Especialidad = Especialidad;
         }
+
+        public override string MostrarDatos()
+        {
+            return base.MostrarDatos() + $"\nEspecialidad: {Especialidad}";
+        }
     }
 }

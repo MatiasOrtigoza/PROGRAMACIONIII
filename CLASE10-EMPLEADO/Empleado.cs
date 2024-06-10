@@ -28,6 +28,11 @@ namespace CLASE10_EMPLEADO
             this.DNI = DNI;
         }
 
+        public virtual string MostrarDatos()
+        {
+            return $"\nDNI: {DNI}\nNombre: {Nombre}\nApellido: {Apellido}";
+        }
+
         public bool Equals(Empleado other)
         {
             return this.DNI == other.DNI;
@@ -35,12 +40,12 @@ namespace CLASE10_EMPLEADO
 
         public int CompareTo(Empleado other)
         {
-            if (int.Parse(this.DNI) < int.Parse(other.DNI))
+            if (string.Compare(this.Apellido, other.Apellido) == -1 )
             {
                 return -1;
             }
 
-            if (int.Parse(this.DNI) > int.Parse(other.DNI))
+            if (string.Compare(this.Apellido, other.Apellido) == 1)
             {
                 return 1;
             }

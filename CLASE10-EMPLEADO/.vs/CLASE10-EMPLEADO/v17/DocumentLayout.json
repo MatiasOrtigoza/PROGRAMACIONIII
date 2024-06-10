@@ -3,31 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|c:\\users\\usuario\\documents\\mati programacion\\mati programacion\\tercer cuatrimestre\\tercer cuatrimestre\\repo-ejercicios\\programacioniii\\clase10-empleado\\controladorempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|solutionrelative:controladorempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|c:\\users\\usuario\\documents\\mati programacion\\mati programacion\\tercer cuatrimestre\\tercer cuatrimestre\\repo-ejercicios\\programacioniii\\clase10-empleado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|c:\\users\\usuario\\documents\\mati programacion\\mati programacion\\tercer cuatrimestre\\tercer cuatrimestre\\repo-ejercicios\\programacioniii\\clase10-empleado\\interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|solutionrelative:interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|c:\\users\\usuario\\documents\\mati programacion\\mati programacion\\tercer cuatrimestre\\tercer cuatrimestre\\repo-ejercicios\\programacioniii\\clase10-empleado\\capataz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|solutionrelative:capataz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|c:\\users\\usuario\\documents\\mati programacion\\mati programacion\\tercer cuatrimestre\\tercer cuatrimestre\\repo-ejercicios\\programacioniii\\clase10-empleado\\obrero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|solutionrelative:obrero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|c:\\users\\usuario\\documents\\mati programacion\\mati programacion\\tercer cuatrimestre\\tercer cuatrimestre\\repo-ejercicios\\programacioniii\\clase10-empleado\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|solutionrelative:empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|c:\\users\\usuario\\documents\\mati programacion\\mati programacion\\tercer cuatrimestre\\tercer cuatrimestre\\repo-ejercicios\\programacioniii\\clase10-empleado\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\obrero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|solutionrelative:obrero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\capataz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|solutionrelative:capataz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2718BAEB-E4DB-4F76-98E3-6E61FFEFE6C2}|CLASE10-EMPLEADO.csproj|solutionrelative:especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -61,20 +61,20 @@
               "RelativeDocumentMoniker": "Interfaz.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\Interfaz.cs",
               "RelativeToolTip": "Interfaz.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAAA0AAAAoAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAmwH8AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T22:00:02.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ControladorEmpleados.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\ControladorEmpleados.cs",
               "RelativeDocumentMoniker": "ControladorEmpleados.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\ControladorEmpleados.cs",
               "RelativeToolTip": "ControladorEmpleados.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAiwCYAAAAAAAAA",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAzwJAAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T21:58:49.397Z",
               "EditorCaption": ""
@@ -87,46 +87,46 @@
               "RelativeDocumentMoniker": "Obrero.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\Obrero.cs",
               "RelativeToolTip": "Obrero.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABBAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwBUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T21:58:37.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Capataz.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\Capataz.cs",
               "RelativeDocumentMoniker": "Capataz.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\Capataz.cs",
               "RelativeToolTip": "Capataz.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T21:58:18.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Empleado.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\Empleado.cs",
               "RelativeDocumentMoniker": "Empleado.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\Empleado.cs",
               "RelativeToolTip": "Empleado.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAgAAAANAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAywBEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T21:58:02.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\MATI PROGRAMACION\\MATI PROGRAMACION\\TERCER CUATRIMESTRE\\TERCER CUATRIMESTRE\\repo-ejercicios\\PROGRAMACIONIII\\CLASE10-EMPLEADO\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAIwBgAAAAUAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAmwE0AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T21:57:35.764Z",
               "EditorCaption": ""

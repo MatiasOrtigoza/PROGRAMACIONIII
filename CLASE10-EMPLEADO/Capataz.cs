@@ -16,5 +16,10 @@ namespace CLASE10_EMPLEADO
         {
             this.NumeroMatricula = NumeroMatricula;
         }
+
+        public override string MostrarDatos()
+        {
+            return base.MostrarDatos() + $"\nNúmero de matrícula profesional: {NumeroMatricula}";
+        }
     }
 }

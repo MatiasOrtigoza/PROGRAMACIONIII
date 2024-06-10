@@ -15,6 +15,16 @@ namespace CLASE10_EMPLEADO
             ListadoEmpleados = new List<Empleado>();
         }
 
+        public bool ListaVacia()
+        {
+            if (ListadoEmpleados.Count() == 0)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
         public Empleado ExisteEmpleado(string DNI)
         {
             int Indice = ListadoEmpleados.IndexOf(new Empleado(DNI));
@@ -30,20 +40,51 @@ namespace CLASE10_EMPLEADO
 
         public string MostrarListado()
         {
-            string Datos;
+            string Datos = "";
+            Obrero AUXO;
+            Capataz AUXC;
+
 
             foreach (Empleado empleado in ListadoEmpleados)
             {
                 if (empleado is Obrero)
                 {
-
+                    AUXO = (Obrero)empleado;
+                    Datos = Datos + AUXO.MostrarDatos() + "\n";
+                }
+                else
+                {
+                    AUXC = (Capataz)empleado;
+                    Datos = Datos + AUXC.MostrarDatos() + "\n";
                 }
             }
+
+            return Datos;
         }
 
         public string MostrarListadoOrdenado()
         {
+            List<Empleado> AUXLISTA = ListadoEmpleados;
+            AUXLISTA.Sort();
+            string Datos = "";
+            Obrero AUXO;
+            Capataz AUXC;
 
+            foreach(Empleado empleado in AUXLISTA)
+            {
+                if (empleado is Obrero)
+                {
+                    AUXO = (Obrero)empleado;
+                    Datos = Datos + AUXO.MostrarDatos() + "\n";
+                }
+                else
+                {
+                    AUXC = (Capataz)empleado;
+                    Datos = Datos + AUXC.MostrarDatos() + "\n";
+                }
+            }
+
+            return Datos;
         }
 
         public bool RemoverEmpleado(string DNI)
@@ -96,7 +137,7 @@ namespace CLASE10_EMPLEADO
 
         public bool AgregarObrero(string DNI, string Nombre, string Apellido, Especialidad Especialidad)
         {
-            if (ExisteEmpleado(DNI) == null)
+            if (ExisteEmpleado(DNI) != null)
             {
                 return false;
             }
@@ -108,7 +149,7 @@ namespace CLASE10_EMPLEADO
 
         public bool AgregarCapataz(string DNI, string Nombre, string Apellido, uint NumeroMatricula)
         {
-            if (ExisteEmpleado(DNI) == null)
+            if (ExisteEmpleado(DNI) != null)
             {
                 return false;
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,8 @@ namespace CLASE10_EMPLEADO
         {
             Console.BackgroundColor = ConsoleColor.DarkBlue; 
             Console.ForegroundColor = ConsoleColor.White;
+
+            Clear();
 
             Console.WriteLine("APLICACION CONSTRUCTORA\n");
             Console.WriteLine("[1] -> Listar obreros y capataces registrados:");
@@ -39,10 +42,13 @@ namespace CLASE10_EMPLEADO
 
             string Especialidad;
 
+            Clear();
+            Mensaje("Ingrese la especialidad del empleado(Albañil/Pintor/Plomero/Herrero/Electricista): ");
             Especialidad = Console.ReadLine().ToUpper();
 
             while (Especialidad == "" || !VerificarEspecialidad(Especialidad))
             {
+                Mensaje("Error en el ingreso... Ingrese Albañil/Pintor/Plomero/Herrero/Electricista: ");
                 Especialidad = Console.ReadLine().ToUpper();
             }
 
@@ -74,18 +80,47 @@ namespace CLASE10_EMPLEADO
 
         public static int SolicitarOpcion()
         {
+            int minOpcion = 1;
+            int maxOpcion = 7;
+
             int Opcion;
             bool Resultado;
 
             Resultado = int.TryParse(Console.ReadLine(), out Opcion);
-            while (!Resultado || Opcion < 1 || Opcion > 7)
+            while (!Resultado || Opcion < minOpcion || Opcion > maxOpcion)
             {
-                Console.Write("Error. Ingrese una opción válida: ");
+                Console.Write($"Error. Ingrese una opción válida entre {minOpcion} y {maxOpcion}: ");
                 Resultado = int.TryParse(Console.ReadLine(), out Opcion);
             }
 
             return Opcion;
         }
+
+        public static int SolicitarTipoDeOrdenamiento()
+        {
+            int minOpcion = 1;
+            int maxOpcion = 2;
+
+            int Opcion;
+            bool Resultado;
+
+            Clear();
+            Console.Write("¿Cómo desea ver la lista?\n");
+            Console.Write("[1] -> Original.\n");
+            Console.Write("[2] -> Ordenada.\n");
+            Console.Write("Ingrese: ");
+
+            Resultado = int.TryParse(Console.ReadLine(), out Opcion);
+            while (!Resultado || Opcion < minOpcion || Opcion > maxOpcion)
+            {
+                Console.Write($"Error. Ingrese una opción válida entre {minOpcion} y {maxOpcion}: ");
+                Resultado = int.TryParse(Console.ReadLine(), out Opcion);
+            }
+
+            return Opcion;
+        }
+
+
 
         public static ushort SolicitarUShort(string Campo)
         {
@@ -149,7 +184,6 @@ namespace CLASE10_EMPLEADO
             while (Dato == "")
             {
                 Mensaje($"\nEl campo {Campo} no puede estar vacío.");
-                Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
             }
