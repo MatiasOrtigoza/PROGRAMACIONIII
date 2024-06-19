@@ -13,8 +13,8 @@ namespace PROYECTO_PARCIAL
         static Controlador Control = new Controlador();
 
         static void Main(string[] args)
-        {
-           
+        { 
+
         }
     }
 }

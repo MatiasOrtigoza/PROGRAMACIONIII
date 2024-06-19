@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,54 @@ namespace PROYECTO_PARCIAL
 
     static class Interfaz
     {
+        static List <string> ListaMenu = new List <string>();
+
+        public static void CargarOpcion(string Opcion)
+        {
+            ListaMenu.Add(Opcion);
+        }
+
+        /// <summary>
+        /// Objeto estático utilizado para el manejo de entrada y salida de datos.
+        /// </summary>
+        /// <returns>Devuelve el número de opción elegido. Si la lista está vacía devuelve -1.</returns>
+
+        public static int MostrarMenu()
+        {
+
+        }
+
+        /// <summary>
+        /// Solicita 
+        /// </summary>
+        /// <returns>Devuelve el número de opción elegido. Si la lista está vacía devuelve -1.</returns>
+
+        static int SolicitarOpcion()
+        {
+
+            int ListSize = ListaMenu.Count;
+
+            if (ListSize == 0)
+            {
+                return -1;
+            }
+
+            int Opcion;
+            bool Resultado;
+            Resultado = int.TryParse(Console.ReadLine(), out Opcion);
+            while (!Resultado || Opcion < 1 || Opcion > ListSize)
+            {
+                ErrorMensaje("\nError al ingresar opción.");
+                Pause();
+                Clear();
+                Mensaje("Ingrese nuevamente: ");
+                Resultado = int.TryParse(Console.ReadLine(), out Opcion);
+            }
+
+            return Opcion;
+        }
+
+
         /// <summary>
         /// Solicita un numero de tipo short mostrando en pantalla el <paramref name="Campo"/> que ingreses por parámetro.
         /// </summary>
