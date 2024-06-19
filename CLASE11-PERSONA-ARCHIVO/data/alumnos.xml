@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Alumnos>
+  <Alumno>
+    <Legajo>100</Legajo>
+    <Nombre>matias</Nombre>
+    <Apellido>ortigoza</Apellido>
+    <Email>m@o.com</Email>
+    <CantMateriasAprobadas>15</CantMateriasAprobadas>
+    <Beca>20</Beca>
+  </Alumno>
+  <Alumno>
+    <Legajo>200</Legajo>
+    <Nombre>nico</Nombre>
+    <Apellido>sanzo</Apellido>
+    <Email>n@s.com</Email>
+    <CantMateriasAprobadas>10</CantMateriasAprobadas>
+    <Beca>200</Beca>
+  </Alumno>
+  <Alumno>
+    <Legajo>300</Legajo>
+    <Nombre>dami</Nombre>
+    <Apellido>martinez</Apellido>
+    <Email>d@m</Email>
+    <CantMateriasAprobadas>10</CantMateriasAprobadas>
+    <Beca>15</Beca>
+  </Alumno>
+</Alumnos>

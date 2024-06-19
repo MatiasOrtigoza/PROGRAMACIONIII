@@ -1,3 +1,4 @@
-Legajo;Nombre;Apellido;Email;Cuota;CantMateriasAprobadas;Beca
-200;matias;ortigoza;matiasortigoza3923@gmail.com;35000;10;20
-900;lucas;perez;asd@caca.com;35000;10;15
+Legajo;Nombre;Apellido;Email;CantMateriasAprobadas;Beca
+200;matias;ortigoza;asd@com;15;20
+300;nico;sanzo;caca@com;0;25
+350;dami;martine;loco@com;15;20
