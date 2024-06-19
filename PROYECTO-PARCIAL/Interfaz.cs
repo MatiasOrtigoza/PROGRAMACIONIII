@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,23 +21,39 @@ namespace PROYECTO_PARCIAL
         {
             ListaMenu.Add(Opcion);
         }
+        public static void CargarOpcion(List<string> Opciones)
+        {
+            foreach (string opcion in Opciones)
+            {
+                ListaMenu.Add(opcion);
+            }
+        }
 
         /// <summary>
         /// Objeto estático utilizado para el manejo de entrada y salida de datos.
         /// </summary>
         /// <returns>Devuelve el número de opción elegido. Si la lista está vacía devuelve -1.</returns>
 
-        public static int MostrarMenu()
+        public static void MostrarMenu()
         {
+            int i = 1;
 
+            Clear();
+
+            Mensaje("MENÚ DE OPCIONES:\n");
+
+            foreach(string opcion in ListaMenu)
+            {
+                Mensaje("\n[" + i + "] -> " + opcion);
+                i++;
+            }
         }
 
         /// <summary>
         /// Solicita 
         /// </summary>
-        /// <returns>Devuelve el número de opción elegido. Si la lista está vacía devuelve -1.</returns>
-
-        static int SolicitarOpcion()
+        /// <returns>Devuelve el número de opción elegido. Si la lista está vacía devuelve -1.</returns
+        public static int SolicitarOpcion()
         {
 
             int ListSize = ListaMenu.Count;
@@ -48,13 +65,15 @@ namespace PROYECTO_PARCIAL
 
             int Opcion;
             bool Resultado;
+            Mensaje("\nIngrese: ");
             Resultado = int.TryParse(Console.ReadLine(), out Opcion);
             while (!Resultado || Opcion < 1 || Opcion > ListSize)
             {
                 ErrorMensaje("\nError al ingresar opción.");
                 Pause();
                 Clear();
-                Mensaje("Ingrese nuevamente: ");
+                MostrarMenu();
+                Mensaje("\nIngrese nuevamente: ");
                 Resultado = int.TryParse(Console.ReadLine(), out Opcion);
             }
 
