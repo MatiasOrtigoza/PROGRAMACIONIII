@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|c:\\users\\laboratorio\\desktop\\ortigoza-programacion\\programacioniii\\clase12-componente\\interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|solutionrelative:interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|c:\\users\\laboratorio\\desktop\\ortigoza-programacion\\programacioniii\\clase12-componente\\controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|solutionrelative:controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|c:\\users\\laboratorio\\desktop\\ortigoza-programacion\\programacioniii\\clase12-componente\\componente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|solutionrelative:componente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|c:\\users\\laboratorio\\desktop\\ortigoza-programacion\\programacioniii\\clase12-componente\\placadevideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|solutionrelative:placadevideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|c:\\users\\laboratorio\\desktop\\ortigoza-programacion\\programacioniii\\clase12-componente\\procesador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|solutionrelative:procesador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|c:\\users\\laboratorio\\desktop\\ortigoza-programacion\\programacioniii\\clase12-componente\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|solutionrelative:enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|c:\\users\\laboratorio\\desktop\\ortigoza-programacion\\programacioniii\\clase12-componente\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E6A0B8C7-3554-40ED-9DE9-A0A93ACD6D7D}|CLASE12-COMPONENTE.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Interfaz.cs",
+              "DocumentMoniker": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Interfaz.cs",
+              "RelativeDocumentMoniker": "Interfaz.cs",
+              "ToolTip": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Interfaz.cs",
+              "RelativeToolTip": "Interfaz.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T00:00:39.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Procesador.cs",
+              "DocumentMoniker": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Procesador.cs",
+              "RelativeDocumentMoniker": "Procesador.cs",
+              "ToolTip": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Procesador.cs",
+              "RelativeToolTip": "Procesador.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAClAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T23:18:49.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-19T23:11:52.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Enums.cs",
+              "RelativeDocumentMoniker": "Enums.cs",
+              "ToolTip": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Enums.cs",
+              "RelativeToolTip": "Enums.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T23:10:29.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlacaDeVideo.cs",
+              "DocumentMoniker": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\PlacaDeVideo.cs",
+              "RelativeDocumentMoniker": "PlacaDeVideo.cs",
+              "ToolTip": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\PlacaDeVideo.cs",
+              "RelativeToolTip": "PlacaDeVideo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T23:09:17.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Componente.cs",
+              "DocumentMoniker": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Componente.cs",
+              "RelativeDocumentMoniker": "Componente.cs",
+              "ToolTip": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Componente.cs",
+              "RelativeToolTip": "Componente.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T22:53:30.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Controlador.cs",
+              "DocumentMoniker": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Controlador.cs",
+              "RelativeDocumentMoniker": "Controlador.cs",
+              "ToolTip": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Controlador.cs",
+              "RelativeToolTip": "Controlador.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T23:08:18.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Laboratorio\\Desktop\\ORTIGOZA-PROGRAMACION\\PROGRAMACIONIII\\CLASE12-COMPONENTE\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T22:45:56.286Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
