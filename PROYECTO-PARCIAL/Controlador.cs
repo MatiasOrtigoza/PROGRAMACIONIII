@@ -8,13 +8,13 @@ using System.Xml;
 
 namespace PROYECTO_PARCIAL
 {
-    internal class Controlador
+    static class Controlador
     {
         //Instanciar listas
 
         //Crear constructor
 
-        public string GuardarXML(string path)
+        public static string GuardarXML(string path)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace PROYECTO_PARCIAL
             }
         }
 
-        public string LeerXML(string path)
+        public static string LeerXML(string path)
         {
             try
             {
@@ -95,7 +95,7 @@ namespace PROYECTO_PARCIAL
             }
         }
 
-        public string GuardarCSV(string path)
+        public static string GuardarCSV(string path)
         {
             string separador = ";";
             StringBuilder datos = new StringBuilder();
@@ -128,7 +128,7 @@ namespace PROYECTO_PARCIAL
             }
         }
 
-        public string LeerCSV(string path)
+        public static string LeerCSV(string path)
         {
             try
             {

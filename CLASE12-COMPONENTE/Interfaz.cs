@@ -40,7 +40,7 @@ namespace CLASE12_COMPONENTE
 
             Clear();
 
-            Mensaje("MENÚ DE OPCIONES:\n");
+            Mensaje("\t\tMENÚ DE OPCIONES:\n");
 
             foreach(string opcion in ListaMenu)
             {
@@ -50,12 +50,79 @@ namespace CLASE12_COMPONENTE
         }
 
         /// <summary>
+        /// Solicitar una Marca de GPU según las opciones dadas.
+        /// </summary>
+        /// <returns>Devuelve el enumerador que corresponde a la marca ingresadas</returns>
+
+        public static MarcaGPU SolicitarMarcaGPU()
+        {
+            Clear();
+            Mensaje("Ingrese una marca de GPU (ATI - NVIDIA): ");
+            string Marca = Console.ReadLine().ToUpper();
+            while (Marca != "ATI" && Marca != "NVIDIA")
+            {
+                ErrorMensaje("\nLa marca ingresada no está dentro de las permitidas...");
+                Pause();
+                Clear();
+                Mensaje("Ingrese nuevamente (ATI - NVIDIA): ");
+                Marca = Console.ReadLine().ToUpper();
+            }
+            return DevolverMarcaGPU(Marca);
+        }
+
+        public static MarcaGPU DevolverMarcaGPU(string Marca)
+        {
+            Marca = Marca.ToUpper();
+
+            switch (Marca)
+            {
+                case "ATI":
+                    return MarcaGPU.ATI;
+                default:
+                    return MarcaGPU.NVIDIA;
+            }
+        }
+
+        /// <summary>
+        /// Solicitar una Marca de CPU según las opciones dadas.
+        /// </summary>
+        /// <returns>Devuelve el enumerador >que corresponde a la marca ingresadas</returns>
+
+        public static MarcaCPU SolicitarMarcaCPU()
+        {
+            Clear();
+            Mensaje("Ingrese una marca de CPU (AMD - INTEL): ");
+            string Marca = Console.ReadLine().ToUpper();
+            while (Marca != "AMD" && Marca != "INTEL")
+            {
+                ErrorMensaje("\nLa marca ingresada no está dentro de las permitidas...");
+                Pause();
+                Clear();
+                Mensaje("Ingrese nuevamente (AMD - INTEL): ");
+                Marca = Console.ReadLine().ToUpper();
+            }
+
+            return DevolverMarcaCPU(Marca);   
+        }
+
+        public static MarcaCPU DevolverMarcaCPU(string Marca)
+        {
+            Marca = Marca.ToUpper();
+            switch (Marca)
+            {
+                case "INTEL":
+                    return MarcaCPU.Intel;
+                default:
+                    return MarcaCPU.AMD;
+            }
+        }
+
+        /// <summary>
         /// Solicita 
         /// </summary>
         /// <returns>Devuelve el número de opción elegido. Si la lista está vacía devuelve -1.</returns
         public static int SolicitarOpcion()
         {
-
             int ListSize = ListaMenu.Count;
 
             if (ListSize == 0)
@@ -80,6 +147,22 @@ namespace CLASE12_COMPONENTE
             return Opcion;
         }
 
+        public static int SolicitarOpcion(int minOption, int maxOption)
+        {
+            int Opcion;
+            bool Resultado;
+            Mensaje("\nIngrese: ");
+            Resultado = int.TryParse(Console.ReadLine(), out Opcion);
+            while (!Resultado || Opcion < minOption || Opcion > maxOption)
+            {
+                ErrorMensaje("\nError al ingresar opción.");
+                Mensaje("\nIngrese nuevamente: ");
+                Resultado = int.TryParse(Console.ReadLine(), out Opcion);
+            }
+
+            return Opcion;
+        }
+
 
         /// <summary>
         /// Solicita un numero de tipo short mostrando en pantalla el <paramref name="Campo"/> que ingreses por parámetro.
@@ -96,7 +179,7 @@ namespace CLASE12_COMPONENTE
             Resultado = short.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -123,7 +206,7 @@ namespace CLASE12_COMPONENTE
             Resultado = ushort.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -150,7 +233,7 @@ namespace CLASE12_COMPONENTE
             Resultado = float.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -177,7 +260,7 @@ namespace CLASE12_COMPONENTE
             Resultado = float.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado || Dato < 0)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -202,7 +285,7 @@ namespace CLASE12_COMPONENTE
             string Dato = Console.ReadLine();
             while (Dato == "")
             {
-                Mensaje($"\nEl campo {Campo} no puede estar vacío.");
+                ErrorMensaje($"\nEl campo {Campo} no puede estar vacío.");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -228,7 +311,7 @@ namespace CLASE12_COMPONENTE
             Resultado = uint.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -255,11 +338,38 @@ namespace CLASE12_COMPONENTE
             Resultado = int.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
                 Resultado = int.TryParse(Console.ReadLine(), out Dato);
+            }
+
+            Clear();
+
+            return Dato;
+        }
+
+        /// <summary>
+        /// Solicita un numero de tipo ulong mostrando en pantalla el <paramref name="Campo"/> que ingreses por parámetro.
+        /// </summary>
+        /// <param name="Campo"></param>
+        /// <returns>Devuelve el número verificando errores</returns>
+
+        public static ulong SolicitarULong(string Campo)
+        {
+            ulong Dato;
+            bool Resultado;
+            Clear();
+            Mensaje($"Por favor ingrese {Campo}: ");
+            Resultado = ulong.TryParse(Console.ReadLine(), out Dato);
+            while (!Resultado || Dato > 999999999999U)
+            {
+                ErrorMensaje($"\nError al ingresar {Campo}...");
+                Pause();
+                Clear();
+                Mensaje($"Ingrese nuevamente el campo {Campo}: ");
+                Resultado = ulong.TryParse(Console.ReadLine(), out Dato);
             }
 
             Clear();
@@ -283,7 +393,7 @@ namespace CLASE12_COMPONENTE
             Resultado = long.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -293,6 +403,37 @@ namespace CLASE12_COMPONENTE
             Clear();
 
             return Dato;
+        }
+
+        public static string SolicitarRuta()
+        {
+            Clear();
+            Mensaje("Ingrese la ruta: ");
+            string Ruta = Console.ReadLine();
+            while (Ruta == "")
+            {
+                ErrorMensaje("\nError al ingresar la ruta...");
+                Pause();
+                Clear();
+                Mensaje("Ingrese nuevamente: ");
+                Ruta = Console.ReadLine();
+            }
+
+            char[] charArray = new char[Ruta.Length];
+            charArray = Ruta.ToCharArray();
+
+            foreach (char elemento in charArray)
+            {
+                if (elemento == '\\')
+                {
+                    int index = Array.IndexOf(charArray, elemento);
+                    charArray[index] = '/';
+                }
+            }
+
+            Ruta = new string(charArray);
+
+            return Ruta;
         }
 
         /// <summary>

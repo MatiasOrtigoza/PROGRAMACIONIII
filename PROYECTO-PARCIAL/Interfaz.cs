@@ -96,7 +96,7 @@ namespace PROYECTO_PARCIAL
             Resultado = short.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -123,7 +123,7 @@ namespace PROYECTO_PARCIAL
             Resultado = ushort.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -150,7 +150,7 @@ namespace PROYECTO_PARCIAL
             Resultado = float.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -177,7 +177,7 @@ namespace PROYECTO_PARCIAL
             Resultado = float.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado || Dato < 0)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -202,7 +202,7 @@ namespace PROYECTO_PARCIAL
             string Dato = Console.ReadLine();
             while (Dato == "")
             {
-                Mensaje($"\nEl campo {Campo} no puede estar vacío.");
+                ErrorMensaje($"\nEl campo {Campo} no puede estar vacío.");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -228,7 +228,7 @@ namespace PROYECTO_PARCIAL
             Resultado = uint.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -255,7 +255,7 @@ namespace PROYECTO_PARCIAL
             Resultado = int.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -283,7 +283,7 @@ namespace PROYECTO_PARCIAL
             Resultado = long.TryParse(Console.ReadLine(), out Dato);
             while (!Resultado)
             {
-                Mensaje($"\nError al ingresar {Campo}...");
+                ErrorMensaje($"\nError al ingresar {Campo}...");
                 Pause();
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
@@ -293,6 +293,68 @@ namespace PROYECTO_PARCIAL
             Clear();
 
             return Dato;
+        }
+
+        /// <summary>
+        /// Solicita un numero de tipo ulong mostrando en pantalla el <paramref name="Campo"/> que ingreses por parámetro.
+        /// </summary>
+        /// <param name="Campo"></param>
+        /// <returns>Devuelve el número verificando errores</returns>
+
+        public static ulong SolicitarULong(string Campo)
+        {
+            ulong Dato;
+            bool Resultado;
+            Clear();
+            Mensaje($"Por favor ingrese {Campo}: ");
+            Resultado = ulong.TryParse(Console.ReadLine(), out Dato);
+            while (!Resultado)
+            {
+                ErrorMensaje($"\nError al ingresar {Campo}...");
+                Pause();
+                Clear();
+                Mensaje($"Ingrese nuevamente el campo {Campo}: ");
+                Resultado = ulong.TryParse(Console.ReadLine(), out Dato);
+            }
+
+            Clear();
+
+            return Dato;
+        }
+
+        /// <summary>
+        /// Solicita una ruta a un archivo de Windows.
+        /// </summary>
+        /// <returns>Devuelve la cadena de string intercambiando los '\' por '/'.</returns>
+        public static string SolicitarRuta()
+        {
+            Clear();
+            Mensaje("Ingrese la ruta: ");
+            string Ruta = Console.ReadLine();
+            while (Ruta == "")
+            {
+                ErrorMensaje("\nError al ingresar la ruta...");
+                Pause();
+                Clear();
+                Mensaje("Ingrese nuevamente: ");
+                Ruta = Console.ReadLine();
+            }
+
+            char[] charArray = new char[Ruta.Length];
+            charArray = Ruta.ToCharArray();
+
+            foreach (char elemento in charArray)
+            {
+                if (elemento == '\\')
+                {
+                    int index = Array.IndexOf(charArray, elemento);
+                    charArray[index] = '/';
+                }
+            }
+
+            Ruta = new string(charArray);
+
+            return Ruta;
         }
 
         /// <summary>
