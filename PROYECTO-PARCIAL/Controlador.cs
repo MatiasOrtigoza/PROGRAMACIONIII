@@ -10,9 +10,7 @@ namespace PROYECTO_PARCIAL
 {
     static class Controlador
     {
-        //Instanciar listas
-
-        //Crear constructor
+        //Instanciar listas estáticas
 
         public static string GuardarXML(string path)
         {
@@ -137,6 +135,9 @@ namespace PROYECTO_PARCIAL
                     StringBuilder sb = new StringBuilder();
                     string separador = ";";
                     sb.AppendLine(string.Join(separador, sr.ReadLine().Split(';')));
+
+                    //IMPORTANTE LEER EL ENCABEZADO PARA QUE LOS DATOS SE CARGUEN CORRECTAMENTE.
+                    string encabezado = sr.ReadLine();
 
                     while (!sr.EndOfStream)
                     {

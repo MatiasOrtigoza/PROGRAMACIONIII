@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9613106E-BC71-436E-9527-9B78F114552A}|ConsoleApp1.csproj|c:\\users\\xxwan\\documents\\facultad\\tercer cuatrimestre\\programacion iii\\repositorio-ejercicios\\programacioniii\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9613106E-BC71-436E-9527-9B78F114552A}|ConsoleApp1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9613106E-BC71-436E-9527-9B78F114552A}|ConsoleApp1.csproj|c:\\users\\xxwan\\documents\\facultad\\tercer cuatrimestre\\programacion iii\\repositorio-ejercicios\\programacioniii\\consoleapp1\\perro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9613106E-BC71-436E-9527-9B78F114552A}|ConsoleApp1.csproj|solutionrelative:perro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9613106E-BC71-436E-9527-9B78F114552A}|ConsoleApp1.csproj|c:\\users\\xxwan\\documents\\facultad\\tercer cuatrimestre\\programacion iii\\repositorio-ejercicios\\programacioniii\\consoleapp1\\ambulancia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9613106E-BC71-436E-9527-9B78F114552A}|ConsoleApp1.csproj|solutionrelative:ambulancia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9613106E-BC71-436E-9527-9B78F114552A}|ConsoleApp1.csproj|c:\\users\\xxwan\\documents\\facultad\\tercer cuatrimestre\\programacion iii\\repositorio-ejercicios\\programacioniii\\consoleapp1\\ialarma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9613106E-BC71-436E-9527-9B78F114552A}|ConsoleApp1.csproj|solutionrelative:ialarma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAlarma.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\ConsoleApp1\\IAlarma.cs",
+              "RelativeDocumentMoniker": "IAlarma.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\ConsoleApp1\\IAlarma.cs",
+              "RelativeToolTip": "IAlarma.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:12:35.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ambulancia.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\ConsoleApp1\\Ambulancia.cs",
+              "RelativeDocumentMoniker": "Ambulancia.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\ConsoleApp1\\Ambulancia.cs",
+              "RelativeToolTip": "Ambulancia.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAawBgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:11:55.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Perro.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\ConsoleApp1\\Perro.cs",
+              "RelativeDocumentMoniker": "Perro.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\ConsoleApp1\\Perro.cs",
+              "RelativeToolTip": "Perro.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAawBgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:10:34.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAArwBQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:10:24.436Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

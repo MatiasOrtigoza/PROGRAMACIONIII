@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PROYECTO_PARCIAL
+namespace CLASE12_BANCO_COMPLETO
 {
     /// <summary>
     /// Objeto estático utilizado para el manejo de entrada y salida de datos.

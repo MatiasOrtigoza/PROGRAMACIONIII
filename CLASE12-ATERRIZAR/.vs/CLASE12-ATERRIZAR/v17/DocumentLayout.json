@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|c:\\users\\xxwan\\documents\\facultad\\tercer cuatrimestre\\programacion iii\\repositorio-ejercicios\\programacioniii\\clase12-aterrizar\\controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|solutionrelative:controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|solutionrelative:paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|solutionrelative:interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\paqueteestadia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|solutionrelative:paqueteestadia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\paqueteauto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B915D5D-4D5F-4B33-A241-45E521FB17C4}|CLASE12-ATERRIZAR.csproj|solutionrelative:paqueteauto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T01:53:34.071Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Interfaz.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\Interfaz.cs",
+              "RelativeDocumentMoniker": "Interfaz.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\Interfaz.cs",
+              "RelativeToolTip": "Interfaz.cs",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAvwMkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T01:53:53.618Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PaqueteAuto.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\PaqueteAuto.cs",
+              "RelativeDocumentMoniker": "PaqueteAuto.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\PaqueteAuto.cs",
+              "RelativeToolTip": "PaqueteAuto.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAA0wEQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T19:36:22.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaqueteEstadia.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\PaqueteEstadia.cs",
+              "RelativeDocumentMoniker": "PaqueteEstadia.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\PaqueteEstadia.cs",
+              "RelativeToolTip": "PaqueteEstadia.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAwDgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T19:30:34.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Paquete.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\Paquete.cs",
+              "RelativeDocumentMoniker": "Paquete.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\Paquete.cs",
+              "RelativeToolTip": "Paquete.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAzwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T02:01:47.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Controlador.cs",
+              "DocumentMoniker": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\Controlador.cs",
+              "RelativeDocumentMoniker": "Controlador.cs",
+              "ToolTip": "C:\\Users\\xxwan\\Documents\\FACULTAD\\TERCER CUATRIMESTRE\\PROGRAMACION III\\repositorio-ejercicios\\PROGRAMACIONIII\\CLASE12-ATERRIZAR\\Controlador.cs",
+              "RelativeToolTip": "Controlador.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T01:54:05.975Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PROYECTO_PARCIAL
+namespace CLASE12_ATERRIZAR
 {
     /// <summary>
     /// Objeto estático utilizado para el manejo de entrada y salida de datos.
@@ -49,6 +49,24 @@ namespace PROYECTO_PARCIAL
             }
         }
 
+        public static int SolicitarCuota()
+        {
+            int Cuota;
+            bool Resultado;
+            Mensaje("\nIngrese las cuotas (1-3-6-12): ");
+            Resultado = int.TryParse(Console.ReadLine(), out Cuota);
+            while (!Resultado || ( Cuota != 1 && Cuota != 3 && Cuota != 6 && Cuota != 12))
+            {
+                ErrorMensaje("\nError al ingresar la cuota.");
+                Pause();
+                Clear();
+                Mensaje("\nIngrese nuevamente (1-3-6-12): ");
+                Resultado = int.TryParse(Console.ReadLine(), out Cuota);
+            }
+
+            return Cuota;
+        }
+
         /// <summary>
         /// Solicita 
         /// </summary>
@@ -78,31 +96,6 @@ namespace PROYECTO_PARCIAL
             }
 
             return Opcion;
-        }
-
-        public static bool SolicitarBooleano(string Campo)
-        {
-            string Dato;
-            Clear();
-            Mensaje($"Por favor ingrese si {Campo} (Si/No): ");
-            Dato = Console.ReadLine().ToUpper();
-            while (Dato == "" || (Dato != "SI" && Dato != "NO"))
-            {
-                ErrorMensaje($"\n¡ERROR!");
-                Pause();
-                Clear();
-                Mensaje($"Ingrese nuevamente si {Campo} (SI/NO): ");
-                Dato = Console.ReadLine().ToUpper();
-            }
-
-            Clear();
-
-            if (Dato == "SI")
-            {
-                return true;
-            }
-
-            return false;
         }
 
 
@@ -187,6 +180,32 @@ namespace PROYECTO_PARCIAL
             return Dato;
         }
 
+        public static bool SolicitarBooleano(string Campo)
+        {
+            string Dato;
+            Clear();
+            Mensaje($"Por favor ingrese si {Campo} (Si/No): ");
+            Dato = Console.ReadLine().ToUpper();
+            while (Dato == "" || (Dato != "SI" && Dato != "NO"))
+            {
+                ErrorMensaje($"\n¡ERROR!");
+                Pause();
+                Clear();
+                Mensaje($"Ingrese nuevamente si {Campo} (SI/NO): ");
+                Dato = Console.ReadLine().ToUpper();
+            }
+
+            Clear();
+
+            if (Dato == "SI")
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+
         /// <summary>
         /// Solicita un numero de tipo float mostrando en pantalla el <paramref name="Campo"/> que ingreses por parámetro.
         /// </summary>
@@ -232,6 +251,7 @@ namespace PROYECTO_PARCIAL
                 Clear();
                 Mensaje($"Ingrese nuevamente el campo {Campo}: ");
                 Dato = Console.ReadLine();
+
             }
 
             Clear();
